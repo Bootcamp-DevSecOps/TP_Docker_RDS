@@ -2,7 +2,6 @@ const { Pool } = require('pg');
 
 // Toutes les valeurs sont lues depuis les variables d'environnement.
 // En production, ces variables pointeront vers l'instance RDS.
-// Ce sont les etudiants qui devront injecter ces variables
 // (via docker-compose.yml, un fichier .env, ou les parametres ECS/EC2).
 const pool = new Pool({
   host: process.env.PGHOST,
